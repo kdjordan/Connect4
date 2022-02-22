@@ -157,8 +157,8 @@ function checkForWin() {
 
   //we start at the upper left hand corner and look for a 'string' of 4 consecutive player1(1) or player(2) in all directions
   //to do that we take each cell and grab 4 cells in each direciton 
-  //we then take this array of 4 cells in each direction and pass them individually (the array of consecutive cells) to checkForWin()
-  //checklForWin() uses the every Array Methos to make sure we have 4 consecutive player entries in our 2D being careful not to exceed the height and width of the grid
+  //we then take this array of 4 cells in each direction and pass them individually (the array of consecutive cells) to _win(array)
+  //_win(array) is a helper function that uses the 'every' Array Method to make sure we have 4 consecutive player entries in our 2D board - being careful not to exceed the height and width of the grid
   for (var y = 0; y < HEIGHT; y++) {
     for (var x = 0; x < WIDTH; x++) {
       var horiz = [[y, x], [y, x + 1], [y, x + 2], [y, x + 3]];
